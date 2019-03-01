@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/happy_"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/answer_Neutral_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/pick_me"
+            android:text="@string/answer_Neutral_Button"
+            android:onClick="onNeutralButton"/>
+        <Button
+            android:id="@+id/answer_yes_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_pick_me"
+            android:onClick="onYesButtonClick"
+            android:text="@string/answer_yes_button" />
+
+        <Button
+            android:id="@+id/answer_no_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_no_pick_me"
+            android:onClick="onNoButtonClick"
+            android:text="@string/answer_no_button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/user_name_edit_text"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:hint="@string/users_name_edit_text"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+</LinearLayout>
